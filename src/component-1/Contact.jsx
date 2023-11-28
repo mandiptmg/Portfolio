@@ -7,15 +7,21 @@ const Contact = () => {
       <section className='text-gray-600 body-font py-28 relative'>
         <div className='px-5 py-18 mx-auto'>
           <div className=' flex flex-col text-center w-full mb-12'>
-            <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white'>
+            <h1
+              data-aos='fade-up'
+              className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white'
+            >
               Contact Us
             </h1>
-            <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
+            <p
+              data-aos='fade-up'
+              className='lg:w-2/3 mx-auto leading-relaxed text-base'
+            >
               Feel free to get in touch with us for any inquiries or assistance
               you need.
             </p>
           </div>
-          <div className='lg:w-1/2 md:w-2/3 mx-auto'>
+          <div data-aos='fade-up' className='lg:w-1/2 md:w-2/3 mx-auto'>
             <div className='flex flex-wrap -m-2'>
               <div className='p-2 w-1/2'>
                 <div className='relative'>
@@ -65,11 +71,17 @@ const Contact = () => {
                 </div>
               </div>
               <div className='p-2 w-full'>
-                <button className='flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg uppercase tracking-wider'>
+                <button
+                  data-aos='fade-up'
+                  className='flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg uppercase tracking-wider'
+                >
                   send
                 </button>
               </div>
-              <div className='p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center'>
+              <div
+                data-aos='fade-up'
+                className='p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center'
+              >
                 <a href='https://mail.google.com/' className='text-indigo-500'>
                   example@email.com
                 </a>

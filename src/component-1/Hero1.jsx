@@ -4,9 +4,17 @@ import { TypeAnimation } from 'react-type-animation'
 const Hero1 = () => {
   return (
     <div>
-      <section id='home' className='text-gray-600  before:w-full before:absolute before:top-0 before:left-0  before:h-screen body-font'>
-        <div className='mx-auto  grid md:grid-cols-2 gap-7 items-center px-5 py-28'>
-          <div className=' animate__backInLeft animate__delay-2s animate__animated text-center '>
+      <section
+        id='home'
+        className='text-gray-600 w-full body-font'
+      >
+        <div className='mx-auto w-full  grid md:grid-cols-2 gap-7 items-center px-5 py-28'>
+          <div
+            data-aos='fade-right'
+            data-aos-easing='ease-in-back'
+            data-aos-delay='1000'
+            className=' text-center '
+          >
             <h5 className='mb-4 font-medium text-gray-900 dark:text-white'>
               Hey, I am
               <span className='text-2xl lg:text-5xl md:text-3xl block capitalize text-indigo-600 font-bold'>
@@ -35,7 +43,7 @@ const Hero1 = () => {
               </button>
             </div>
           </div>
-          <div className=' animate__animated animate__backInRight animate__delay-3s'>
+          <div data-aos='fade-left' data-aos-delay='1000'>
             <img
               className='object-cover md:block hidden rounded-2xl w-full  drop-shadow-2xl object-center rounded'
               alt='hero'
@@ -44,8 +52,8 @@ const Hero1 = () => {
           </div>
         </div>
       </section>
-      <div className='fixed text-3xl md:block hidden left-1 md:top-[35%] lg:top-[40%]'>
-        <ul className='grid gap-y-1'>
+      <div className='fixed w-full h-full text-3xl md:block hidden left-1 md:top-[35%] lg:top-[40%]'>
+        <ul data-aos='fade-right' className='grid gap-y-1'>
           <li>
             <a href='https://www.facebook.com/mandip.tamang.904'>
               <FaSquareFacebook className='text-blue-600 rounded-sm' />

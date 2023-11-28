@@ -1,6 +1,8 @@
 import moai from '../assets/project/moai.png'
 import refract from '../assets/project/refract.png'
 import ecommerce from '../assets/project/e-commerce.png'
+import tour from '../assets/project/tour.png'
+
 
 
 const data = [
@@ -34,25 +36,38 @@ const data = [
     url: 'https://moai-six.vercel.app/',
     img: moai,
   },
+  {
+    title: 'Tour',
+    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nisi non perspiciatis laborum deleniti harum! Minima sit earum architecto omnis.',
+    url: 'https://tour-vert.vercel.app/',
+    img: tour,
+  },
 ]
 const Projects = () => {
   return (
     <div className='py-40'>
-      <h1 className='text-3xl dark:text-white text-center font-bold text-gray-800 mb-8'>
+      <h1
+        data-aos='fade-up'
+        className='text-3xl dark:text-white text-center font-bold text-gray-800 mb-8'
+      >
         Projects
       </h1>
-      <div className='py-16 grid md:grid-cols-3 gap-8'>
+      <div className='py-16 grid  md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {data.map((item) => {
           const { img, title, url, desc } = item
           return (
             <>
-              <article className='bg-white rounded-lg shadow-md hover:shadow-xl duration-300'>
+              <article
+                data-aos='fade-up'
+                className='bg-white rounded-lg shadow-md hover:shadow-xl duration-300'
+              >
                 <img
+                  data-aos='fade-up'
                   src={img}
                   alt={title}
                   className='w-full object-cover rounded-t-lg h-64'
                 />
-                <div className='capitalize p-8'>
+                <div data-aos='fade-up' className='capitalize p-8'>
                   <h2 className='text-xl tracking-wide font-medium'>{title}</h2>
                   <p className='mt-4 text-slate-700 leading-loose'>{desc}</p>
                   <div className='mt-4 flex gap-x-4'>

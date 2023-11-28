@@ -5,9 +5,10 @@ import { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa6'
 import { FaTimes } from 'react-icons/fa'
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs'
+import { useGlobalContext } from '../context/context'
 
 const Navbar = () => {
-  const [active, setActive] = useState(false)
+  const { active, setActive } = useGlobalContext()
   const [toogle, setToogle] = useState(false)
   //load dark mode local storage
   useEffect(() => {
@@ -28,19 +29,22 @@ const Navbar = () => {
   ]
   return (
     <>
-      <div className='h-[5rem] grid sticky backdrop-blur-md top-0 z-10 '>
+      <div className='h-[5rem] z-20 grid sticky backdrop-blur-md top-0 z-10 '>
         <div className='flex items-center justify-between'>
           <div className='flex gap-x-2  items-center'>
             <a href='/'>
               <img
+                data-aos='fade-right'
                 src={image}
                 alt='logo'
-                className='w-9 animate__animated animate__backInLeft animate__slow animate__delay-0  h-9 rounded-full'
+                className='w-9   h-9 rounded-full'
               />
             </a>
             <h1
+              data-aos='fade-right'
+              data-aos-delay='1000'
               className='text-gray-600 
-            animate__animated duration-500 animate__backInLeft animate__slow animate__delay-1s text-lg dark:text-white'
+             duration-500  text-lg dark:text-white'
             >
               Mandip&nbsp;
               <span className='capitalize text-indigo-900 font-semibold'>
@@ -48,7 +52,10 @@ const Navbar = () => {
               </span>
             </h1>
           </div>
-          <div className='flex animate__animated animate__backInRight animate__slow animate__delay-0  items-center gap-5 lg:gap-10'>
+          <div
+            data-aos='fade-down'
+            className='flex items-center gap-5 lg:gap-10'
+          >
             {navlink.map((item, index) => {
               const { title, href } = item
               return (
@@ -60,7 +67,7 @@ const Navbar = () => {
               )
             })}
           </div>
-          <div>
+          <div data-aos='fade-left'>
             <button
               onClick={() => {
                 setToogle(!toogle)
@@ -72,7 +79,7 @@ const Navbar = () => {
                   localStorage.setItem('dark-mode', !toogle)
                 }
               }}
-              title={toogle ? 'light mode on': 'night mode on'}
+              title={toogle ? 'light mode on' : 'night mode on'}
               className='mr-5  md:mr-0'
             >
               {toogle ? (
@@ -84,9 +91,13 @@ const Navbar = () => {
 
             <button
               onClick={() => setActive(!active)}
-              className='md:hidden  animate__animated animate__backInRight animate__slow animate__delay-0  text-xl hover:text-indigo-900  text-indigo-700 '
+              className='md:hidden text-xl '
             >
-              <FaBars className='hover:rotate-90 transition-all duration-300 ' />
+              {active ? (
+                <FaTimes className='text-2xl text-red-600 duration-300 transition-all hover:scale-105 hover:text-red-800 ' />
+              ) : (
+                <FaBars className='hover:rotate-90 hover:text-indigo-900  text-indigo-700  transition-all duration-300 ' />
+              )}
             </button>
           </div>
         </div>
@@ -96,19 +107,11 @@ const Navbar = () => {
 
       <div
         className={
-          active
-            ? 'w-full visible z-10 duration-300 transition-all dark:bg-slate-900   bg-white fixed top-0 left-0 h-screen grid place-items-center   duration-300 transition-all scale-1'
-            : 'w-full invisible duration-300 transition-all   bg-white fixed top-0 left-0 h-screen grid place-items-center  duration-300 transition-all scale-0'
+          active ? ' fixed dark:bg-slate-900 bg-white top-0 left-0 z-10 w-full h-full' : 'hidden'
         }
       >
-        <div>
-          <button className='fixed top-6 right-4'>
-            <FaTimes
-              onClick={() => setActive(!active)}
-              className='text-2xl text-red-600 duration-300 transition-all hover:scale-105 hover:text-red-800 '
-            />
-          </button>
-          <div className='flex flex-col gap-y-10 items-center  -mt-28 justify-center '>
+        <div className='grid mt-40 place-items-center'>
+          <div className='grid gap-y-14'>
             {navlink.map((item, index) => {
               const { title, href } = item
               return (
