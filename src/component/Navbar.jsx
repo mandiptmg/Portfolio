@@ -115,7 +115,7 @@ const Navbar = () => {
             {navlink.map((item, index) => {
               const { title, href } = item
               return (
-                <ul className='text-4xl dark:text-white  capitalize text-gray-600  hover:text-indigo-800'>
+                <ul className='text-4xl dark:text-white text-center capitalize text-gray-600  hover:text-indigo-800'>
                   <li key={index} className='hover:text-indigo-600'>
                     <a href={href} onClick={() => setActive(false)}>
                       {title}

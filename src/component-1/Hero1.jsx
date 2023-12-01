@@ -1,13 +1,15 @@
-import {FaLinkedin, FaSquareFacebook, FaSquareInstagram, FaSquareTwitter } from 'react-icons/fa6'
+import {
+  FaLinkedin,
+  FaSquareFacebook,
+  FaSquareInstagram,
+  FaSquareTwitter,
+} from 'react-icons/fa6'
 import img from '../assets/person.png'
 import { TypeAnimation } from 'react-type-animation'
 const Hero1 = () => {
   return (
     <div>
-      <section
-        id='home'
-        className='text-gray-600 w-full body-font'
-      >
+      <section id='home' className='text-gray-600 w-full body-font'>
         <div className='mx-auto w-full  grid md:grid-cols-2 gap-7 items-center px-5 py-28'>
           <div
             data-aos='fade-right'
@@ -37,9 +39,10 @@ const Hero1 = () => {
               I blend creativity with technical expertise to bring websites to
               life, making user interactions seamless and visually appealing.
             </p>
+
             <div className='flex justify-center'>
               <button className='inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded capitalize text-lg'>
-                <a href='#contact'>contact me</a>
+                <a href='#contact'>Hire me</a>
               </button>
             </div>
           </div>
@@ -52,7 +55,7 @@ const Hero1 = () => {
           </div>
         </div>
       </section>
-      <div className='fixed w-full h-full text-3xl md:block hidden left-1 md:top-[35%] lg:top-[40%]'>
+      <div className='fixed text-3xl md:block hidden left-1 md:top-[35%] lg:top-[40%]'>
         <ul data-aos='fade-right' className='grid gap-y-1'>
           <li>
             <a href='https://www.facebook.com/mandip.tamang.904'>

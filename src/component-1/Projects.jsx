@@ -8,19 +8,16 @@ import tour from '../assets/project/tour.png'
 const data = [
   {
     title: 'Contentful CMS',
-    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat perspiciatis quidem molestias aut dicta illo veniam nisi esse odio quos.',
     url: 'https://react-vite-projects-16-contentful.netlify.app/',
     img: 'https://screenshot-proxy.netlify.app/f_avif,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/651ceabd6512507bba3d785f/screenshot_2023-10-04-04-32-00-0000.png',
   },
   {
     title: 'Stock Image',
-    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat perspiciatis quidem molestias aut dicta illo veniam nisi esse odio quos.',
     url: 'https://deft-sawine-f98a98.netlify.app/',
     img: 'https://screenshot-proxy.netlify.app/f_avif,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/653a7690028f6812fcdd2746/screenshot_2023-10-26-14-24-21-0000.png',
   },
   {
     title: 'E-commerce',
-    desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat perspiciatis quidem molestias aut dicta illo veniam nisi esse odio quos.',
     url: 'https://e-commerce-beige-eta.vercel.app/',
     img: ecommerce,
   },
@@ -31,14 +28,12 @@ const data = [
     img: refract,
   },
   {
-    title: 'Moai',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nisi non perspiciatis laborum deleniti harum! Minima sit earum architecto omnis.',
+    title: 'Moai', 
     url: 'https://moai-six.vercel.app/',
     img: moai,
   },
   {
     title: 'Tour',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nisi non perspiciatis laborum deleniti harum! Minima sit earum architecto omnis.',
     url: 'https://tour-vert.vercel.app/',
     img: tour,
   },
@@ -54,7 +49,7 @@ const Projects = () => {
       </h1>
       <div className='py-16 grid  md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {data.map((item) => {
-          const { img, title, url, desc } = item
+          const { img, title, url} = item
           return (
             <>
               <article
@@ -69,7 +64,9 @@ const Projects = () => {
                 />
                 <div data-aos='fade-up' className='capitalize p-8'>
                   <h2 className='text-xl tracking-wide font-medium'>{title}</h2>
-                  <p className='mt-4 text-slate-700 leading-loose'>{desc}</p>
+                  <p className='mt-4 text-slate-700 text-sm leading-loose'>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, neque.  
+                  </p>
                   <div className='mt-4 flex gap-x-4'>
                     <a href={url}>
                       <svg
