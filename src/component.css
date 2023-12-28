@@ -41,3 +41,13 @@
 .animate-blob {
   animation: blob 7s ease-in-out infinite;
 }
+
+
+::-webkit-scrollbar{
+  width: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:#BFC9CA;
+  border-radius: 4rem;
+}

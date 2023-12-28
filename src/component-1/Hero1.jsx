@@ -4,10 +4,7 @@ import {
   FaSquareInstagram,
   FaSquareTwitter,
 } from 'react-icons/fa6'
-import { SiTailwindcss } from 'react-icons/si'
 import img from '../assets/person.png'
-import img1 from '../assets/goodbye.png'
-import '../../src/component.css'
 
 import { TypeAnimation } from 'react-type-animation'
 
