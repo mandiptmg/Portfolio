@@ -4,57 +4,103 @@ import {
   FaSquareInstagram,
   FaSquareTwitter,
 } from 'react-icons/fa6'
+import { SiTailwindcss } from 'react-icons/si'
 import img from '../assets/person.png'
+import img1 from '../assets/goodbye.png'
+import '../../src/component.css'
+
 import { TypeAnimation } from 'react-type-animation'
+
 const Hero1 = () => {
+   const dynamicStyle = {
+     backgroundImage: `url(${img})`,
+     // Add other dynamic styles as needed
+   }
   return (
     <div>
-      <section id='home' className='text-gray-600 w-full body-font'>
-        <div className='mx-auto w-full  grid md:grid-cols-2 gap-7 items-center px-5 py-28'>
+      <section
+        id='home'
+        className='text-gray-600 pt-28 -mt-20 w-full mx-auto body-font'
+      >
+        <div className='  flex flex-col-reverse md:grid md:grid-cols-2 md:gap-7 gap-y-20 items-center  px-5 '>
           <div
-            data-aos='fade-right'
+            data-aos='fade-up'
             data-aos-easing='ease-in-back'
             data-aos-delay='1000'
-            className=' text-center '
+            className='space-y-7  md:text-left text-center '
           >
-            <h5 className='mb-4 font-medium text-gray-900 dark:text-white'>
-              Hey, I am
-              <span className='text-2xl lg:text-5xl md:text-3xl block capitalize text-indigo-600 font-bold'>
+            <div className='flex items-center justify-center'>
+              <h1 className='lg:text-5xl text-4xl block capitalize text-indigo-600 grid place-items-center font-bold'>
                 <TypeAnimation
-                  sequence={['mandip tamang  ']}
+                  sequence={[`Front-End React Developer 👋🏼 `]}
                   wrapper='span'
                   speed={500}
-                  repeat={2}
                 />
-              </span>
-            </h5>
-            <p className='mb-8 leading-relaxed'>
-              I'm a passionate
-              <span className='text-indigo-600'> front-end developer </span>
-              with a flair for crafting captivating web experiences. Proficient
-              in{' '}
-              <span className='text-indigo-600'>
-                HTML, CSS, JavaScript, React, and Tailwind.
-              </span>
-              I blend creativity with technical expertise to bring websites to
-              life, making user interactions seamless and visually appealing.
-            </p>
+              </h1>
+            </div>
 
-            <div className='flex justify-center'>
-              <button className='inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded capitalize text-lg'>
-                <a href='#contact'>Hire me</a>
-              </button>
+            <p className='mb-8 dark:text-gray-400 md:text-lg leading-relaxed'>
+              Hi, I'm Mandip Tamang. A passionate Front-end React Developer
+              based in Hetauda, Nepal. 📍
+            </p>
+          </div>
+
+          <div className='grid w-full place-items-center'>
+            <div
+              data-aos='fade-left'
+              data-aos-delay='1000'
+              className={`animate-blob relative bg-cover bg-center bg-no-repeat border border-4 bg-black/20 border-gray-800 rounded-full lg:w-[25rem] lg:h-[25rem] md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] transition-all duration-1000 `}
+              style={dynamicStyle}
+            >
             </div>
           </div>
-          <div data-aos='fade-left' data-aos-delay='1000'>
-            <img
-              className='object-cover md:block hidden rounded-2xl w-full  drop-shadow-2xl object-center rounded'
-              alt='hero'
-              src={img}
-            />
-          </div>
+        </div>
+
+        <div data-aos='fade-up' className='md:flex px-5 mt-7  md:space-x-20 md:space-y-0 space-y-4  w-full text-center  items-center font-semibold text-gray-400'>
+          <span className='capitalize md:border-none border-b text-lg'>
+            tech stack
+            <span className='md:visible invisible'>&nbsp; &nbsp; |</span>
+          </span>
+          <ul className='cursor-pointer flex justify-center space-x-3'>
+            <li>
+              <img
+                src='https://skillicons.dev/icons?i=html'
+                alt='html'
+                className='hover:-mt-4 duration-500'
+              />
+            </li>
+            <li>
+              <img
+                src='https://skillicons.dev/icons?i=js'
+                alt='js'
+                className='hover:-mt-4 duration-500'
+              />
+            </li>
+            <li>
+              <img
+                src='https://skillicons.dev/icons?i=css'
+                alt='css'
+                className='hover:-mt-4 duration-500'
+              />
+            </li>
+            <li>
+              <img
+                src='https://skillicons.dev/icons?i=react'
+                alt='react.js'
+                className='hover:-mt-4 duration-500'
+              />
+            </li>
+            <li>
+              <img
+                src='https://skillicons.dev/icons?i=tailwind'
+                alt=''
+                className='hover:-mt-4 duration-500'
+              />
+            </li>
+          </ul>
         </div>
       </section>
+
       <div className='fixed text-3xl md:block hidden left-1 md:top-[35%] lg:top-[40%]'>
         <ul data-aos='fade-right' className='grid gap-y-1'>
           <li>

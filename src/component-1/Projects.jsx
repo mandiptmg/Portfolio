@@ -40,16 +40,16 @@ const data = [
 ]
 const Projects = () => {
   return (
-    <div className='py-40'>
+    <div className='w-full h-full'>
       <h1
         data-aos='fade-up'
-        className='text-3xl dark:text-white text-center font-bold text-gray-800 mb-8'
+        className='text-3xl dark:text-white text-center pt-24 mb-16 font-bold text-gray-800'
       >
         Projects
       </h1>
-      <div className='py-16 grid  md:grid-cols-2 lg:grid-cols-3 gap-8'>
+      <div className='grid  md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {data.map((item) => {
-          const { img, title, url} = item
+          const { img, title, url } = item
           return (
             <>
               <article
@@ -65,7 +65,8 @@ const Projects = () => {
                 <div data-aos='fade-up' className='capitalize p-8'>
                   <h2 className='text-xl tracking-wide font-medium'>{title}</h2>
                   <p className='mt-4 text-slate-700 text-sm leading-loose'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, neque.  
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate, neque.
                   </p>
                   <div className='mt-4 flex gap-x-4'>
                     <a href={url}>

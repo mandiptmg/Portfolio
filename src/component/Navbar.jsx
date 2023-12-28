@@ -32,14 +32,14 @@ const Navbar = () => {
       <div className='h-[5rem] z-20 grid sticky backdrop-blur-md top-0 z-10 '>
         <div className='flex items-center justify-between'>
           <div className='flex gap-x-2  items-center'>
-            <a href='/'>
+            <a href='/' className='flex items-center gap-1'>
               <img
                 data-aos='fade-right'
                 src={image}
                 alt='logo'
                 className='w-9   h-9 rounded-full'
               />
-            </a>
+           
             <h1
               data-aos='fade-right'
               data-aos-delay='1000'
@@ -47,10 +47,10 @@ const Navbar = () => {
              duration-500  text-lg dark:text-white'
             >
               Mandip&nbsp;
-              <span className='capitalize text-indigo-900 font-semibold'>
+              <span className='capitalize text-indigo-600 font-semibold'>
                 | developer
               </span>
-            </h1>
+            </h1> </a>
           </div>
           <div
             data-aos='fade-down'
@@ -85,7 +85,7 @@ const Navbar = () => {
               {toogle ? (
                 <BsFillSunFill className='text-yellow-600' />
               ) : (
-                <BsFillMoonStarsFill />
+                <BsFillMoonStarsFill className='text-slate-800' />
               )}
             </button>
 

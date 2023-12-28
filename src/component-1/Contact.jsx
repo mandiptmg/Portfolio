@@ -33,7 +33,7 @@ const Contact = () => {
                       htmlFor='name'
                       className='leading-7 text-sm text-gray-600'
                     >
-                      Name
+                      Full Name
                     </label>
                     <input
                       required
