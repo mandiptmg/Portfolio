@@ -2,19 +2,21 @@ import moai from '../assets/project/moai.png'
 import refract from '../assets/project/refract.png'
 import ecommerce from '../assets/project/e-commerce.png'
 import tour from '../assets/project/tour.png'
+import stockImage from '../assets/project/stock-Image.png'
+import journey from '../assets/project/journey.png'
 
 
 
 const data = [
   {
-    title: 'Contentful CMS',
-    url: 'https://react-vite-projects-16-contentful.netlify.app/',
-    img: 'https://screenshot-proxy.netlify.app/f_avif,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/651ceabd6512507bba3d785f/screenshot_2023-10-04-04-32-00-0000.png',
+    title: 'Journey',
+    url: 'https://journey-travel.vercel.app/',
+    img: journey,
   },
   {
     title: 'Stock Image',
     url: 'https://deft-sawine-f98a98.netlify.app/',
-    img: 'https://screenshot-proxy.netlify.app/f_avif,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/653a7690028f6812fcdd2746/screenshot_2023-10-26-14-24-21-0000.png',
+    img: stockImage,
   },
   {
     title: 'E-commerce',
@@ -28,7 +30,7 @@ const data = [
     img: refract,
   },
   {
-    title: 'Moai', 
+    title: 'Moai',
     url: 'https://moai-six.vercel.app/',
     img: moai,
   },
@@ -63,7 +65,7 @@ const Projects = () => {
                   className='w-full object-cover rounded-t-lg h-64'
                 />
                 <div data-aos='fade-up' className='capitalize p-8'>
-                  <h2 className='text-xl tracking-wide font-medium'>{title}</h2>
+                  <h2 className='text-xl text-gray-600 tracking-wide font-medium'>{title}</h2>
                   <p className='mt-4 text-slate-700 text-sm leading-loose'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptate, neque.

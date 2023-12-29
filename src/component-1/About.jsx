@@ -22,7 +22,8 @@ const About = () => {
             </h1>
             <p className='text-gray-400 md:text-lg leading-relaxed'>
               As a junior front-end developer, I specialize in crafting dynamic
-              and visually appealing websites. Proficient <span className='text-indigo-600'>
+              and visually appealing websites. Proficient{' '}
+              <span className='text-indigo-600'>
                 HTML, CSS, and JavaScript,{' '}
               </span>
               I create seamless user interfaces. My toolkit includes modern
@@ -32,6 +33,7 @@ const About = () => {
               and technical expertise to bring web projects to life. Check out
               my portfolio to see my work.
             </p>
+           
           </div>
         </div>
       </section>

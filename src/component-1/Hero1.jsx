@@ -3,23 +3,24 @@ import {
   FaSquareFacebook,
   FaSquareInstagram,
   FaSquareTwitter,
+  FaGithub,
 } from 'react-icons/fa6'
 import img from '../assets/person.png'
 
 import { TypeAnimation } from 'react-type-animation'
 
 const Hero1 = () => {
-   const dynamicStyle = {
-     backgroundImage: `url(${img})`,
-     // Add other dynamic styles as needed
-   }
+  const dynamicStyle = {
+    backgroundImage: `url(${img})`,
+    // Add other dynamic styles as needed
+  }
   return (
     <div>
       <section
         id='home'
         className='text-gray-600 pt-28 -mt-20 w-full mx-auto body-font'
       >
-        <div className='  flex flex-col-reverse md:grid md:grid-cols-2 md:gap-7 gap-y-20 items-center  px-5 '>
+        <div className='  flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-7 gap-y-20 items-center  px-5 '>
           <div
             data-aos='fade-up'
             data-aos-easing='ease-in-back'
@@ -31,7 +32,7 @@ const Hero1 = () => {
                 <TypeAnimation
                   sequence={[`Front-End React Developer 👋🏼 `]}
                   wrapper='span'
-                  speed={500}
+                  speed={250}
                 />
               </h1>
             </div>
@@ -40,6 +41,24 @@ const Hero1 = () => {
               Hi, I'm Mandip Tamang. A passionate Front-end React Developer
               based in Hetauda, Nepal. 📍
             </p>
+            <div className='flex lg:justify-start justify-center items-center gap-x-4'>
+              <button
+                onClick={() => {
+                  window.open('https://github.com/mandiptmg')
+                }}
+              >
+                <FaGithub size={25} className='hover:text-blue-700' />
+              </button>{' '}
+              <button
+                onClick={() => {
+                  window.open(
+                    'https://www.linkedin.com/in/mandip-tamang-a59624248/ '
+                  )
+                }}
+              >
+                <FaLinkedin size={25} className='hover:text-blue-700' />
+              </button>{' '}
+            </div>
           </div>
 
           <div className='grid w-full place-items-center'>
@@ -48,12 +67,14 @@ const Hero1 = () => {
               data-aos-delay='1000'
               className={`animate-blob relative bg-cover bg-center bg-no-repeat border border-4 bg-black/20 border-gray-800 rounded-full lg:w-[25rem] lg:h-[25rem] md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] transition-all duration-1000 `}
               style={dynamicStyle}
-            >
-            </div>
+            ></div>
           </div>
         </div>
 
-        <div data-aos='fade-up' className='md:flex px-5 mt-7  md:space-x-20 md:space-y-0 space-y-4  w-full text-center  items-center font-semibold text-gray-400'>
+        <div
+          data-aos='fade-up'
+          className='md:flex px-5 mt-7  md:space-x-20 md:space-y-0 space-y-4  w-full text-center  items-center font-semibold text-gray-400'
+        >
           <span className='capitalize md:border-none border-b text-lg'>
             tech stack
             <span className='md:visible invisible'>&nbsp; &nbsp; |</span>
