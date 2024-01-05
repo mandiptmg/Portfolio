@@ -4,6 +4,8 @@ import ecommerce from '../assets/project/e-commerce.png'
 import tour from '../assets/project/tour.png'
 import stockImage from '../assets/project/stock-Image.png'
 import journey from '../assets/project/journey.png'
+import falcon from '../assets/project/falcon.png'
+
 
 
 
@@ -12,6 +14,11 @@ const data = [
     title: 'Journey',
     url: 'https://journey-travel.vercel.app/',
     img: journey,
+  },
+   {
+    title: 'falcon company',
+    url: 'https://falcon-car.vercel.app/',
+    img: falcon,
   },
   {
     title: 'Stock Image',
