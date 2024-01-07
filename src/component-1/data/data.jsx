@@ -5,12 +5,19 @@ import tour from '../../assets/project/tour.png'
 import stockImage from '../../assets/project/stock-Image.png'
 import journey from '../../assets/project/journey.png'
 import falcon from '../../assets/project/falcon.png'
+import gym from '../../assets/project/gym.png'
+
 
 const data = [
   {
     title: 'Journey',
     url: 'https://journey-travel.vercel.app/',
     img: journey,
+  },
+  {
+    title: 'Gym',
+    url: 'https://himalayan-gym.vercel.app/',
+    img: gym,
   },
   {
     title: 'falcon company',

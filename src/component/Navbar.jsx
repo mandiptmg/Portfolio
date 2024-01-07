@@ -10,6 +10,8 @@ import { useGlobalContext } from '../context/context'
 const Navbar = () => {
   const { active, setActive } = useGlobalContext()
   const [toogle, setToogle] = useState(false)
+  const [scroll, setScroll] = useState('')
+
   //load dark mode local storage
   useEffect(() => {
     const storedValue = localStorage.getItem('dark-mode')
@@ -19,6 +21,17 @@ const Navbar = () => {
     } else {
       setToogle(false)
     }
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setScroll('bg-white dark:bg-slate-800 shadow-xl')
+      } else {
+        setScroll('')
+      }
+    }
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   const navlink = [
@@ -28,46 +41,42 @@ const Navbar = () => {
     { title: 'contact', href: '#contact' },
   ]
   return (
-    <>
-      <div className='h-[5rem] z-20 grid sticky backdrop-blur-md top-0 z-10 '>
+    <div
+      className={` ${scroll} grid items-center  h-20 z-20 grid sticky top-0 `}
+    >
+      <div className='w-[90vw] mx-auto md:w-[80vw]'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-x-2  items-center'>
             <a href='/' className='flex items-center gap-1'>
               <img
-                data-aos='fade-right'
                 src={image}
                 alt='logo'
-                className='w-9   h-9 rounded-full'
+                className='w-9 duration-1000 animate__slower animate__fadeInLeft animate__animated h-9 rounded-full'
               />
-           
-            <h1
-              data-aos='fade-right'
-              data-aos-delay='1000'
-              className='text-gray-600 
-             duration-500  text-lg dark:text-white'
-            >
-              Mandip&nbsp;
-              <span className='capitalize text-indigo-600 font-semibold'>
-                | developer
-              </span>
-            </h1> </a>
+              <h1
+                className='text-gray-600 
+             duration-500  animate__slow animate__delay-1s	 animate__fadeInLeft animate__animated text-lg dark:text-white'
+              >
+                Mandip&nbsp;
+                <span className='capitalize text-indigo-600 font-semibold'>
+                  | developer
+                </span>
+              </h1>{' '}
+            </a>
           </div>
-          <div
-            data-aos='fade-down'
-            className='flex items-center gap-5 lg:gap-10'
-          >
-            {navlink.map((item, index) => {
-              const { title, href } = item
-              return (
-                <ul className='text-lg dark:text-white hidden md:block capitalize text-gray-600 hover:text-indigo-800'>
-                  <li key={index}>
+          <div className='hidden animate__slower 	 animate__fadeInDown animate__animated md:block'>
+            <ul className='text-lg flex items-center gap-5 lg:gap-10 dark:text-white  capitalize text-gray-600 hover:text-indigo-800'>
+              {navlink.map((item) => {
+                const { title, href } = item
+                return (
+                  <li key={title}>
                     <a href={href}>{title}</a>
                   </li>
-                </ul>
-              )
-            })}
+                )
+              })}{' '}
+            </ul>
           </div>
-          <div data-aos='fade-left'>
+          <div>
             <button
               onClick={() => {
                 setToogle(!toogle)
@@ -80,7 +89,7 @@ const Navbar = () => {
                 }
               }}
               title={toogle ? 'light mode on' : 'night mode on'}
-              className='mr-5  md:mr-0'
+              className='mr-5  md:mr-0 animate__slower 	 animate__fadeInRight animate__animated'
             >
               {toogle ? (
                 <BsFillSunFill className='text-yellow-600' />
@@ -91,13 +100,9 @@ const Navbar = () => {
 
             <button
               onClick={() => setActive(!active)}
-              className='md:hidden text-xl '
+              className='md:hidden text-xl  animate__slower 	 animate__fadeInRight animate__animated'
             >
-              {active ? (
-                <FaTimes className='text-2xl text-red-600 duration-300 transition-all hover:scale-105 hover:text-red-800 ' />
-              ) : (
-                <FaBars className='hover:rotate-90 hover:text-indigo-900  text-indigo-700  transition-all duration-300 ' />
-              )}
+              <FaBars className='hover:rotate-90 hover:text-indigo-900  text-indigo-700  transition-all duration-300 ' />
             </button>
           </div>
         </div>
@@ -107,27 +112,37 @@ const Navbar = () => {
 
       <div
         className={
-          active ? ' fixed dark:bg-slate-900 bg-white top-0 left-0 z-10 w-full h-full' : 'hidden'
+          active
+            ? ' fixed dark:bg-slate-900 bg-white top-0 left-0 z-10 w-full h-full'
+            : 'hidden'
         }
       >
         <div className='grid mt-40 place-items-center'>
-          <div className='grid gap-y-14'>
-            {navlink.map((item, index) => {
-              const { title, href } = item
-              return (
-                <ul className='text-4xl dark:text-white text-center capitalize text-gray-600  hover:text-indigo-800'>
+          <div>
+            <button
+              className='absolute top-7 right-5 '
+              onClick={() => setActive(false)}
+            >
+              <FaTimes className='text-2xl text-red-600 duration-300 transition-all hover:scale-105 hover:text-red-800 ' />
+            </button>
+          </div>
+          <div>
+            <ul className='text-4xl space-y-14 dark:text-white text-center capitalize text-gray-600 '>
+              {navlink.map((item, index) => {
+                const { title, href } = item
+                return (
                   <li key={index} className='hover:text-indigo-600'>
                     <a href={href} onClick={() => setActive(false)}>
                       {title}
                     </a>
                   </li>
-                </ul>
-              )
-            })}
+                )
+              })}{' '}
+            </ul>
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

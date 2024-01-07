@@ -18,7 +18,7 @@ const Hero1 = () => {
     <div>
       <section
         id='home'
-        className='text-gray-600 pt-28 -mt-20 w-full mx-auto body-font'
+        className='text-gray-600 h-screen pt-28 -mt-20 w-full mx-auto body-font'
       >
         <div className='  flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-7 gap-y-20 items-center  px-5 '>
           <div
