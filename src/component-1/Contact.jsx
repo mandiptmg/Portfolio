@@ -8,16 +8,16 @@ const Contact = () => {
           <div className=' flex flex-col text-center w-full mb-12'>
             <h1
               data-aos='fade-up'
-              className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 dark:text-white'
+              className='sm:text-3xl text-2xl font-bold title-font mb-4 text-gray-900 uppercase  dark:text-white'
             >
-              Contact Us
+              get in <span className='text-indigo-600'>touch</span>
             </h1>
             <p
               data-aos='fade-up'
               className='lg:w-2/3 mx-auto leading-relaxed text-base'
             >
-              Feel free to get in touch with us for any inquiries or assistance
-              you need.
+              I welcome the opportunity to connect and discuss potential
+              collaborations, projects, or any inquiries you may have.
             </p>
           </div>
           <div data-aos='fade-up' className='lg:w-1/2 md:w-2/3 mx-auto'>
@@ -37,10 +37,16 @@ const Contact = () => {
                     </label>
                     <input
                       required
+                      placeholder='Enter your full name '
                       type='text'
                       id='name'
                       name='name'
-                      className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+                      className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 
+                      dark:border-none
+                      dark:focus:placeholder-gray-400
+                      dark:placeholder-gray-300
+                      focus:bg-white focus:ring-2
+                       focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
                     />
                   </div>
                 </div>
@@ -54,10 +60,14 @@ const Contact = () => {
                     </label>
                     <input
                       required
+                      placeholder='Enter your email address'
                       type='email'
                       id='email'
                       name='email'
-                      className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
+                      className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300  
+                      dark:border-none
+                      dark:focus:placeholder-gray-400
+                      dark:placeholder-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out'
                     />
                   </div>
                 </div>
@@ -71,9 +81,13 @@ const Contact = () => {
                     </label>
                     <textarea
                       id='message'
+                      placeholder='Message...'
                       required
                       name='message'
-                      className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out'
+                      className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 
+                     dark:border-none
+                      dark:focus:placeholder-gray-400
+                      dark:placeholder-gray-300  transition-colors duration-200 ease-in-out'
                     ></textarea>
                   </div>
                 </div>
@@ -94,7 +108,7 @@ const Contact = () => {
                 <a href='https://mail.google.com/' className='text-indigo-500'>
                   example@email.com
                 </a>
-                <span className='block justify-center items-center my-6 flex '>
+                <span className='justify-center items-center my-6 flex '>
                   <a
                     href='https://twitter.com/mandiptamang77'
                     className='text-gray-500'

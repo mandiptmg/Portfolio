@@ -22,8 +22,8 @@ const Navbar = () => {
       setToogle(false)
     }
     const handleScroll = () => {
-      if (window.scrollY > 80) {
-        setScroll('bg-white dark:bg-slate-800 shadow-xl')
+      if (window.scrollY > 50) {
+        setScroll('bg-gray-100 dark:bg-slate-800 shadow-xl')
       } else {
         setScroll('')
       }
@@ -42,7 +42,7 @@ const Navbar = () => {
   ]
   return (
     <div
-      className={` ${scroll} grid items-center  h-20 z-20 grid sticky top-0 `}
+      className={` ${scroll} items-center  h-20 z-20 grid sticky top-0 `}
     >
       <div className='w-[90vw] mx-auto md:w-[80vw]'>
         <div className='flex items-center justify-between'>

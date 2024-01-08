@@ -31,7 +31,7 @@ const About = () => {
               styling with <span className='text-indigo-600'>Tailwind CSS</span>{' '}
               . With a strong commitment to user experience, I merge creativity
               and technical expertise to bring web projects to life. Check out
-              my portfolio to see my work.
+              my projects to see my work.
             </p>
            
           </div>
