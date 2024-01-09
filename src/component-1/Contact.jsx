@@ -105,34 +105,36 @@ const Contact = () => {
                 data-aos='fade-up'
                 className='p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center'
               >
-                <a href='https://mail.google.com/' className='text-indigo-500'>
+                <button onClick={()=>window.open('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHXPchjWXShWGSlnhFMcqhNzbVWJgKJqJbzctTbBMGKpNJKTfdKMPWwzNnnnVDLRPXnq')} className='text-indigo-500'>
                   mandiptamang125@gmail.com
-                </a>
+                </button>
                 <span className='justify-center items-center my-6 flex '>
-                  <a
-                    href='https://twitter.com/mandiptamang77'
+                  <button
+                    onClick={()=>window.open('https://twitter.com/mandiptamang77')}
                     className='text-gray-500'
                   >
                     <FaTwitter className='w-5 h-5' />
-                  </a>
-                  <a
-                    href='https://www.facebook.com/mandip.tamang.904'
+                  </button>
+                  <button    onClick={()=>window.open('https://www.facebook.com/mandip.tamang.904')}
+                   
                     className='ml-4 text-gray-500'
                   >
                     <FaFacebook className='w-5 h-5' />
-                  </a>
-                  <a
-                    href='https://www.instagram.com/mandiptamang125/?fbclid=IwAR0j9fy-dTalrGd-8t5AOjGUrzEbDRocr_riSo9pEKiIutDztX_RIHb3DNQ'
+                  </button>
+                  <button
+                     onClick={()=>window.open('https://www.instagram.com/mandiptamang125/?fbclid=IwAR0j9fy-dTalrGd-8t5AOjGUrzEbDRocr_riSo9pEKiIutDztX_RIHb3DNQ' )}
+
                     className='ml-4 text-gray-500'
                   >
                     <FaInstagram className='w-5 h-5' />
-                  </a>
-                  <a
-                    href='https://www.linkedin.com/in/mandip-tamang-a59624248/'
+                  </button>
+                  <button
+                     onClick={()=>window.open('https://www.linkedin.com/in/mandip-tamang/')}
+                  
                     className='ml-4 text-gray-500'
                   >
                     <FaLinkedin className='w-5 h-5' />
-                  </a>
+                  </button>
                 </span>
               </div>
             </div>
