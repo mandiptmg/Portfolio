@@ -106,7 +106,7 @@ const Contact = () => {
                 className='p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center'
               >
                 <a href='https://mail.google.com/' className='text-indigo-500'>
-                  example@email.com
+                  mandiptamang125@gmail.com
                 </a>
                 <span className='justify-center items-center my-6 flex '>
                   <a
