@@ -33,7 +33,16 @@ const About = () => {
               and technical expertise to bring web projects to life. Check out
               my projects to see my work.
             </p>
-           
+            <button
+              onClick={() =>
+                window.open(
+                  'https://drive.google.com/file/d/1yurV1bzaWw-ulS9BytRnTN3ukJqB-dG_/view'
+                )
+              }
+              className='rounded px-3 py-1 mt-4 text-white hover:bg-indigo-500 bg-indigo-600 text-base capitalize font-semibold md:text-lg  '
+            >
+              resume
+            </button>
           </div>
         </div>
       </section>
