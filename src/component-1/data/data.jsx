@@ -5,6 +5,7 @@ import stockImage from '../../assets/project/stock-Image.png'
 import journey from '../../assets/project/journey.png'
 import falcon from '../../assets/project/falcon.png'
 import gym from '../../assets/project/gym.png'
+import furnivogue from '../../assets/project/furnivogue.png'
 
 const data = [
   {
@@ -21,6 +22,15 @@ const data = [
     img: gym,
     github: ' https://github.com/mandiptmg/HimalayanGym ',
   },
+
+  {
+    title: 'FurniVogue',
+    url: 'https://furniVogue.vercel.app/',
+    desc: 'React Hook Form, Tailwind CSS, Animate.css, Aos,React-icons,Next.js, Typescript, Material-UI,Slider,react-Swiper',
+    img: furnivogue,
+    github: 'https://github.com/mandiptmg/furniture-ecommerce',
+  },
+
   {
     title: 'falcon company',
     url: 'https://falcon-car.vercel.app/',

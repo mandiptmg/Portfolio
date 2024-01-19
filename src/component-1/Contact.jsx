@@ -25,13 +25,13 @@ const Contact = () => {
               <form
                 action='https://getform.io/f/014c7187-b8e7-405c-9ddd-21ac63fe7610'
                 method='POST'
-                className='flex flex-wrap -m-2'
+                className='md:flex grid  max-w-2xl w-full mx-auto flex-wrap -m-2'
               >
-                <div className='p-2 w-1/2'>
-                  <div className='relative'>
+                <div className='p-2 md:w-1/2 w-full'>
+                  <div className='relative '>
                     <label
                       htmlFor='name'
-                      className='leading-7 text-sm text-gray-600'
+                      className='leading-7 w-full text-sm text-gray-600'
                     >
                       Full Name
                     </label>
@@ -41,7 +41,7 @@ const Contact = () => {
                       type='text'
                       id='name'
                       name='name'
-                      className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 
+                      className='w-full bg-gray-100 bg-opacity-50  rounded border border-gray-300 focus:border-indigo-500 
                       dark:border-none
                       dark:focus:placeholder-gray-400
                       dark:placeholder-gray-300
@@ -50,7 +50,7 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                <div className='p-2 w-1/2'>
+                <div className='p-2 md:w-1/2 w-full'>
                   <div className='relative'>
                     <label
                       htmlFor='email'

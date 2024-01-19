@@ -28,7 +28,7 @@ const Hero1 = () => {
             className='space-y-7  md:text-left text-center '
           >
             <div className='flex items-center justify-center'>
-              <h1 className='lg:text-5xl text-4xl block capitalize text-indigo-600 grid place-items-center font-bold'>
+              <h1 className='lg:text-5xl text-4xl  capitalize text-indigo-600 grid place-items-center font-bold'>
                 <TypeAnimation
                   sequence={[`Front-End React Developer 👋🏼 `]}
                   wrapper='span'
@@ -65,7 +65,7 @@ const Hero1 = () => {
             <div
               data-aos='fade-left'
               data-aos-delay='1000'
-              className={`animate-blob relative bg-cover bg-center bg-no-repeat border border-4 bg-black/20 border-gray-800 rounded-full lg:w-[25rem] lg:h-[25rem] md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] transition-all duration-1000 `}
+              className={`animate-blob relative bg-cover bg-center bg-no-repeat  border-4 bg-black/20 border-gray-800 rounded-full lg:w-[25rem] lg:h-[25rem] md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] transition-all duration-1000 `}
               style={dynamicStyle}
             ></div>
           </div>
@@ -73,7 +73,7 @@ const Hero1 = () => {
 
         <div
           data-aos='fade-up'
-          className='md:flex px-5 mt-7  md:space-x-20 md:space-y-0 space-y-4  w-full text-center  items-center font-semibold text-gray-400'
+          className='md:flex px-5 mt-7  md:space-x-7 md:space-y-0 space-y-4  w-full text-center  items-center font-semibold text-gray-400'
         >
           <span className='capitalize md:border-none border-b text-lg'>
             tech stack
@@ -89,7 +89,7 @@ const Hero1 = () => {
             </li>
             <li>
               <img
-                src='https://skillicons.dev/icons?i=js'
+                src='https://skillicons.dev/icons?i=js,ts'
                 alt='js'
                 className='hover:-mt-4 duration-500'
               />
@@ -103,7 +103,7 @@ const Hero1 = () => {
             </li>
             <li>
               <img
-                src='https://skillicons.dev/icons?i=react'
+                src='https://skillicons.dev/icons?i=react,next'
                 alt='react.js'
                 className='hover:-mt-4 duration-500'
               />
@@ -111,6 +111,13 @@ const Hero1 = () => {
             <li>
               <img
                 src='https://skillicons.dev/icons?i=tailwind'
+                alt=''
+                className='hover:-mt-4 duration-500'
+              />
+            </li>
+             <li>
+              <img
+                src='https://skillicons.dev/icons?i=git,github'
                 alt=''
                 className='hover:-mt-4 duration-500'
               />
