@@ -52,7 +52,7 @@ const Hero1 = () => {
               <button
                 onClick={() => {
                   window.open(
-                    'https://www.linkedin.com/in/mandip-tamang-a59624248/ '
+                    'https://www.linkedin.com/in/mandip-tamang/'
                   )
                 }}
               >
