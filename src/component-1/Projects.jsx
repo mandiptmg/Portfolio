@@ -18,7 +18,7 @@ const Projects = () => {
 
         <div className='grid w-full place-items-end'>
           <button
-            className='  -mt-4 dark:text-white mb-4 text-lg font-semibold  underline hover:no-underline'
+            className='  -mt-4 dark:text-white mb-4 text-sm md:text-lg font-semibold  underline hover:no-underline'
             onClick={() => setShowAll(!showAll)}
           >
             {showAll ? 'Show Less' : 'Show More'}
