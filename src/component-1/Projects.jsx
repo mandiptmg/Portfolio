@@ -15,15 +15,6 @@ const Projects = () => {
         >
           Projects
         </h1>
-
-        <div className='grid w-full place-items-end'>
-          <button
-            className='  -mt-4 dark:text-white mb-4 text-sm md:text-lg font-semibold  underline hover:no-underline'
-            onClick={() => setShowAll(!showAll)}
-          >
-            {showAll ? 'Show Less' : 'Show More'}
-          </button>
-        </div>
       </div>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {data
@@ -73,6 +64,14 @@ const Projects = () => {
             )
           })
           .slice(0, showAll ? data.length : -2)}
+      </div>
+      <div className='grid w-full mt-10 place-items-center'>
+        <button
+          className='  -mt-4 dark:text-white mb-4 text-sm md:text-lg font-semibold  underline hover:no-underline'
+          onClick={() => setShowAll(!showAll)}
+        >
+          {showAll ? 'Show Less' : 'Show More'}
+        </button>
       </div>
     </div>
   )
