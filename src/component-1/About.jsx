@@ -2,7 +2,7 @@ import img from '../assets/3d-casual-life-smiling-man-wearing-headset-with-micro
 const About = () => {
   return (
     <div>
-      <section className='w-full grid place-items-center  text-gray-600'>
+      <section className='w-full grid place-items-center text-gray-600'>
         <div className=' pb-10 pt-28 grid lg:grid-cols-2  place-items-center'>
           <div className=' w-full mb-10 md:mb-0'>
             <img
