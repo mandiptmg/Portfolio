@@ -18,7 +18,7 @@ const Hero1 = () => {
     <div>
       <section
         id='home'
-        className='text-gray-600 h-screen pt-28 -mt-20 w-full mx-auto body-font'
+        className='text-gray-600 relative md:h-screen pt-28  -mt-20 w-full mx-auto body-font'
       >
         <div className='  flex flex-col-reverse lg:grid lg:grid-cols-2 md:gap-7 gap-y-20 items-center  px-5 '>
           <div
@@ -51,9 +51,7 @@ const Hero1 = () => {
               </button>{' '}
               <button
                 onClick={() => {
-                  window.open(
-                    'https://www.linkedin.com/in/mandip-tamang/'
-                  )
+                  window.open('https://www.linkedin.com/in/mandip-tamang/')
                 }}
               >
                 <FaLinkedin size={25} className='hover:text-blue-700' />
@@ -115,7 +113,7 @@ const Hero1 = () => {
                 className='hover:-mt-4 duration-500'
               />
             </li>
-             <li>
+            <li>
               <img
                 src='https://skillicons.dev/icons?i=git,github'
                 alt=''
