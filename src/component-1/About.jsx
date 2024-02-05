@@ -22,26 +22,43 @@ const About = () => {
             </h1>
             <p className='text-gray-400 md:text-lg leading-relaxed'>
               As a junior front-end developer, I specialize in crafting dynamic
-              and visually appealing websites. Proficient{' '}
-              <span className='text-indigo-600'>
-                HTML, CSS, and JavaScript,{' '}
-              </span>
-              I create seamless user interfaces. My toolkit includes modern
-              libraries like <span className='text-indigo-600'>React</span> and
-              styling with <span className='text-indigo-600'>Tailwind CSS</span>{' '}
-              . With a strong commitment to user experience, I merge creativity
+              and visually appealing websites. Proficient in{' '}
+              <span className='text-indigo-600'>HTML</span>,{' '}
+              <span className='text-indigo-600'>CSS</span>, and{' '}
+              <span className='text-indigo-600'>JavaScript</span>, I create
+              seamless user interfaces. My toolkit includes modern libraries
+              like <span className='text-indigo-600'>React</span> and styling
+              with <span className='text-indigo-600'>Tailwind CSS</span>,
+              augmented by the power of{' '}
+              <span className='text-indigo-600'>Next.js</span> and the type
+              safety of <span className='text-indigo-600'>TypeScript</span>.
+              With a strong commitment to user experience, I merge creativity
               and technical expertise to bring web projects to life. Check out
-              my projects to see my work.
+              my projects on <span className='text-indigo-600'>GitHub</span> to
+              see my work.
             </p>
+
             <button
               onClick={() =>
                 window.open(
-                  'https://drive.google.com/file/d/1yurV1bzaWw-ulS9BytRnTN3ukJqB-dG_/view'
+                  'https://drive.google.com/file/d/1dw-XIinbBwSHvBkUXudVddQ2O72FZrWW/view'
                 )
               }
-              className='rounded px-3 py-1 mt-4 text-white hover:bg-indigo-500 bg-indigo-600 text-base capitalize font-semibold md:text-lg  '
+              className='rounded px-3 py-2 flex gap-2 items-center mt-4 text-white hover:bg-indigo-500 bg-indigo-600 text-base capitalize font-semibold md:text-lg'
             >
-              resume
+              <svg
+                className=''
+                xmlns='http://www.w3.org/2000/svg'
+                height='16'
+                width='20'
+                viewBox='0 0 640 512'
+              >
+                <path
+                  d='M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z'
+                  fill='white'
+                ></path>
+              </svg>
+              <span> Resume</span>
             </button>
           </div>
         </div>

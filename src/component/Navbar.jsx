@@ -1,4 +1,4 @@
-import image from '../assets/m-low-resolution-logo-color-on-transparent-background.png'
+import image from '../assets/logo.png'
 // import { NavLink } from 'react-router-dom'
 import 'animate.css'
 import { useEffect, useState } from 'react'
@@ -41,9 +41,7 @@ const Navbar = () => {
     { title: 'contact', href: '#contact' },
   ]
   return (
-    <div
-      className={` ${scroll} items-center  h-20 z-20 grid sticky top-0 `}
-    >
+    <div className={` ${scroll} items-center  h-20 z-20 grid sticky top-0 `}>
       <div className='w-[90vw] mx-auto md:w-[80vw]'>
         <div className='flex items-center justify-between'>
           <div className='flex gap-x-2  items-center'>

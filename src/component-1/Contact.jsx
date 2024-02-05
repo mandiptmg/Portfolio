@@ -1,4 +1,11 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6'
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaWhatsapp,
+} from 'react-icons/fa6'
+import { MdOutlineMail } from 'react-icons/md'
 
 const Contact = () => {
   return (
@@ -91,46 +98,91 @@ const Contact = () => {
                     ></textarea>
                   </div>
                 </div>
-                <div className='p-2 w-full'>
+                <div className='p-2 text-center w-full'>
                   <button
-                    type='submit'
                     data-aos='fade-up'
-                    className='flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg uppercase tracking-wider'
+                    type='submit'
+                    className='relative hover:shadow-2xl hover:shadow1 button1 overflow-hidden font-medium text-white transition-all duration-700 px-4 py-2 bg-indigo-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600'
                   >
-                    send
+                    <div className='flex items-center'>
+                      <div className='w-8 h-8 p-1 mr-2 duration-700 svg-wrapper rounded-full'>
+                        <svg
+                          className='w-full h-full text-white'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 24 24'
+                        >
+                          <path fill='none' d='M0 0h24v24H0z'></path>
+                          <path
+                            fill='currentColor'
+                            d='M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z'
+                          ></path>
+                        </svg>
+                      </div>
+                      <span className='transition-all span1 text-lg  duration-700'>
+                        Send
+                      </span>
+                    </div>
                   </button>
                 </div>
               </form>
               <div
                 data-aos='fade-up'
-                className='p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center'
+                className='p-2 pt-8 w-full mt-8 border-t border-gray-200 text-center'
               >
-                <button onClick={()=>window.open('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHXPchjWXShWGSlnhFMcqhNzbVWJgKJqJbzctTbBMGKpNJKTfdKMPWwzNnnnVDLRPXnq')} className='text-indigo-500'>
-                  mandiptamang125@gmail.com
-                </button>
+                <div className='grid place-items-center gap-y-2'>
+                  <button
+                    onClick={() =>
+                      window.open(
+                        'https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHXPchjWXShWGSlnhFMcqhNzbVWJgKJqJbzctTbBMGKpNJKTfdKMPWwzNnnnVDLRPXnq'
+                      )
+                    }
+                    className='flex items-center gap-1 text-gray-400 hover:text-indigo-500 '
+                  >
+                    <span>
+                      <MdOutlineMail className='text-2xl text-red-400 cursor-pointer  ' />
+                    </span>
+                    <span>mandiptamang125@gmail.com</span>
+                  </button>{' '}
+                  <button
+                    onClick={() => window.open('https://wa.me/9809118069')}
+                    className='flex items-center cursor-pointer hover:text-green-400  gap-1 text-gray-400  '
+                  >
+                    <FaWhatsapp className='text-2xl  text-green-400' />
+                    <span>+977 9809118069</span>
+                  </button>
+                </div>
+
                 <span className='justify-center items-center my-6 flex '>
                   <button
-                    onClick={()=>window.open('https://twitter.com/mandiptamang77')}
+                    onClick={() =>
+                      window.open('https://twitter.com/mandiptamang77')
+                    }
                     className='text-gray-500'
                   >
                     <FaTwitter className='w-5 h-5' />
                   </button>
-                  <button    onClick={()=>window.open('https://www.facebook.com/mandip.tamang.904')}
-                   
+                  <button
+                    onClick={() =>
+                      window.open('https://www.facebook.com/mandip.tamang.904')
+                    }
                     className='ml-4 text-gray-500'
                   >
                     <FaFacebook className='w-5 h-5' />
                   </button>
                   <button
-                     onClick={()=>window.open('https://www.instagram.com/mandiptamang125/?fbclid=IwAR0j9fy-dTalrGd-8t5AOjGUrzEbDRocr_riSo9pEKiIutDztX_RIHb3DNQ' )}
-
+                    onClick={() =>
+                      window.open(
+                        'https://www.instagram.com/mandiptamang125/?fbclid=IwAR0j9fy-dTalrGd-8t5AOjGUrzEbDRocr_riSo9pEKiIutDztX_RIHb3DNQ'
+                      )
+                    }
                     className='ml-4 text-gray-500'
                   >
                     <FaInstagram className='w-5 h-5' />
                   </button>
                   <button
-                     onClick={()=>window.open('https://www.linkedin.com/in/mandip-tamang/')}
-                  
+                    onClick={() =>
+                      window.open('https://www.linkedin.com/in/mandip-tamang/')
+                    }
                     className='ml-4 text-gray-500'
                   >
                     <FaLinkedin className='w-5 h-5' />

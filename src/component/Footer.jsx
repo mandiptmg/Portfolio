@@ -1,6 +1,7 @@
 import { FaChevronCircleUp } from 'react-icons/fa'
-import img from '../assets/m-low-resolution-logo-color-on-transparent-background.png'
+import img from '../assets/logo.png'
 const Footer = () => {
+  const time = new Date().getFullYear()
   return (
     <div>
       <footer className='relative md:w-[80vw] mx-auto md-[90vw]  mt-16 md:mt-0 '>
@@ -39,9 +40,9 @@ const Footer = () => {
           </div>
         </div>
         <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
-        <p className='block text-sm text-gray-500 sm:text-center dark:text-gray-400'>
-          © 2023{' '}
-          <a href='#home' className='hover:underline'>
+        <p className='block text-sm mx-5 md:mx-0 text-gray-500 sm:text-center dark:text-gray-400'>
+          © {time}
+          <a href='#home' className='hover:underline ml-1'>
             Mandip
           </a>
           . All Rights Reserved.
